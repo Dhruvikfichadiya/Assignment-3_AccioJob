@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0a0a0a;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    background-color: #000000;
+}
+
+/* Header */
+.header {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1a1a;
+    border-bottom: 2px solid #d4af37;
+}
+
+.header-content h1 {
+    font-size: 2.5rem;
+    color: #d4af37;
+    letter-spacing: 4px;
+    margin-bottom: 0.3rem;
+}
+
+.header-content p {
+    font-size: 1rem;
+    color: #c0c0c0;
+    letter-spacing: 2px;
+}
+
+/* Layout */
+.layout {
+    min-height: 70vh;
+}
+
+/* Main Content */
+.main-content {
+    width: 100%;
+    padding: 2rem;
+    background-color: #0a0a0a;
+}
+
+.content-header {
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.content-header h2 {
+    font-size: 2rem;
+    color: #d4af37;
+    margin-bottom: 0.5rem;
+}
+
+.content-header p {
+    color: #c0c0c0;
+    font-size: 1rem;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.card {
+    width: 350px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #2a2a2a;
+    position: relative;
+}
+
+.card:hover {
+    border-color: #d4af37;
+}
+
+/* Card Badge */
+.card-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #d4af37;
+    color: #000000;
+    padding: 0.4rem 0.8rem;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 0.75rem;
+    z-index: 10;
+}
+
+.card-badge.exclusive {
+    background-color: #c0c0c0;
+}
+
+.card-badge.sport {
+    background-color: #ff0000;
+    color: #ffffff;
+}
+
+/* Card Image */
+.card-image-wrapper {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Card Content */
+.card-content {
+    padding: 1.5rem;
+}
+
+.card h3 {
+    font-size: 1.3rem;
+    color: #d4af37;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.card .specs {
+    font-size: 0.85rem;
+    color: #c0c0c0;
+    text-align: center;
+    margin-bottom: 0.8rem;
+}
+
+.card .description {
+    font-size: 0.9rem;
+    color: #a0a0a0;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.card .price {
+    font-size: 1.6rem;
+    color: #d4af37;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+
+.card button {
+    width: 100%;
+    padding: 0.9rem;
+    font-size: 0.95rem;
+    font-weight: bold;
+    background-color: #d4af37;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.card button:hover {
+    background-color: #b8941f;
+}
+
+/* Footer */
+.footer {
+    padding: 2rem;
+    background-color: #1a1a1a;
+    border-top: 2px solid #d4af37;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer-section h4 {
+    color: #d4af37;
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+
+.footer-section p {
+    color: #c0c0c0;
+    font-size: 0.85rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-links a {
+    color: #c0c0c0;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+    color: #d4af37;
+}
+
+.footer-social p {
+    color: #808080;
+    font-size: 0.8rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header-content h1 {
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+    }
+
+    .header-content p {
+        font-size: 0.85rem;
+    }
+
+    .main-content {
+        padding: 1.5rem;
+    }
+
+    .content-header h2 {
+        font-size: 1.6rem;
+    }
+
+    .cards {
+        gap: 1.5rem;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+}
